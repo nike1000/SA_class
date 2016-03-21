@@ -1,0 +1,1 @@
+ ls -hSlA | awk -v dir="directory:\n" -v file="file:\n" -v total="total\n" '{if ($1 ~ /^d/){dir=dir " " $5 "\t\t" $9 "\n"}else if($1 ~ /^-/){file=file " " $5 "\t\t" $9 "\n"} else if($1 ~ /^total/){total=total " " $2 "\t\t" $1}} END {print dir "\n" file "\n" total}'

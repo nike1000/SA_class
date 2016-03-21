@@ -1,0 +1,20 @@
+location=hsinchu
+unit=c
+
+
+##local可能有多個，讀進來後要分批處理
+##根據參數去parse對應結果，要寫成一個function，可能用到的片段都先parse出來，在依照使用者輸入決定要不要append到輸出
+##curl基本上只跟 "地區" & "攝氏/華氏" 有關
+
+
+##地區zip code問題
+##攝氏華氏符號
+##使用者參數
+##多地區
+
+##help
+##讀預設conf
+##輸入檢查
+
+
+##function 集中到檔案前半，input讀進來先檢查location數，用迴圈跑整個流程
